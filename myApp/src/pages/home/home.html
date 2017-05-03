@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-50>
+      <button [navPush]="examPage">
+        <ion-icon name="checkmark"></ion-icon><br/>
+        ทำแบบทดสอบ
+      </button>
+    </ion-col>
+    <ion-col col-50>
+      <button [navPush]="downloadPage">
+        <ion-icon name="bus"></ion-icon><br/>
+        ดาวน์โหลดชุดข้อสอบ
+      </button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-50>
+      <button [navPush]="scorePage">
+        <ion-icon name="calculator"></ion-icon><br/>
+        ผลคะแนน
+      </button>
+    </ion-col>
+    <ion-col col-50>
+      <button [navPush]="settingPage">
+        <ion-icon name="cog"></ion-icon><br/>
+         ตั้งค่า
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-content>
